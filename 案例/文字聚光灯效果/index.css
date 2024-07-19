@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+:root { 
+  /* 根元素，类似于html标签，优先级会更高
+  可以定义css变量
+  */
+  background-color: #c59b9bb6;
+  /* 
+  必须以--为开头，表示变量，用var()函数进行引用
+  */
+  body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  --color: red;
+  
+}
+.box {
+ 
+ 
+  color: var(--color);
+  font-weight: 900;
+  font-size: 100px;
+  /* 字体全部大写 */
+  text-transform: uppercase; 
+}
