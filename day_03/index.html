@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .container {
+        width: 600px;
+        height: 200px;
+        background-color: red;
+       }
+       .left{
+        float: left;
+        width: 200px;
+        height: 120px;
+        background-color: antiquewhite;
+       }
+       .right{
+        /* display: flow-root; */
+        overflow: auto;
+        height: 200px;
+        background-color: gray;
+       }
+
+        
+    </style>
 </head>
+
 <body>
-  
+    <div class="container">
+        <div class="left"></div>
+        <div class="right">
+            11111111111
+        </div>
+    </div>
 </body>
+
 </html>

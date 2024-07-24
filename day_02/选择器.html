@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        *= 是包含这个字母就可以，单词中有 
+        ~= 是指必须是这个单词
+        */
+        h2[name~="houdunren"] {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 name="houdunren w">houdunren.com</h2>
+    <h2 name="houdunren.com">hdcms.com</h2>
+</body>
+
+</html>
