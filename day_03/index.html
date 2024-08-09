@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-       .container {
-        width: 600px;
+      .box {
+        display: flex;
+        flex-direction: row;
+        /* 默认是nowrap，如果设置 */
+        flex-wrap: wrap; 
+      }
+      .item {
         height: 200px;
-        background-color: red;
-       }
-       .left{
-        float: left;
         width: 200px;
-        height: 120px;
-        background-color: antiquewhite;
-       }
-       .right{
-        /* display: flow-root; */
-        overflow: auto;
-        height: 200px;
-        background-color: gray;
-       }
-
-        
+        background-color: red;
+        border: 1px solid #000;
+        text-align: center;
+        line-height: 200px;
+        font-size: 30px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <div class="container">
-        <div class="left"></div>
-        <div class="right">
-            11111111111
-        </div>
+  <body>
+    flex 布局
+    <div class="box">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+      <div class="item">11</div>
+      <div class="item">12</div>
     </div>
-</body>
-
+  </body>
 </html>
